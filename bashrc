@@ -13,9 +13,9 @@ function cdl {
 	cd "$@" && ls
 }
 
-alias scomplete='sacct -X --format=JobID%12,JobName%17,MaxRSS,Elapsed,ExitCode,State' 
+alias scomplete='sacct -X --format=JobID%17,JobName%17,MaxRSS,Elapsed,ExitCode,State' 
 alias scompletemonth='sacct -S `date --date "last month" +%Y-%m-%d` -o "Submit,JobID%15,JobName,State,ExitCode,Elapsed,CPUTime,MaxRSS"'
-alias sq="squeue -u ${USER}  --Format=jobid:15,arraytaskid,name,timeused,timeleft"
+alias sq="squeue -u ${USER}  --Format=name,jobid:15,arraytaskid,timeused,timeleft"
 
 source ~/.bash/git-completion.bash
 
