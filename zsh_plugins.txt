@@ -1,0 +1,6 @@
+caarlos0/zsh-mkc
+csh-users/zsh-completions
+caarlos0-graveyard/zsh-open-pr
+ael-code/zsh-colored-man-pages
+davidde/git
+djui/alias-tips
