@@ -12,6 +12,10 @@ setopt promptsubst
 
 zstyle ':vcs_info:*' formats '%b'
 
+function virtualenv_info { 
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+}
+
 precmd() { 
 	vcs_info 
 
@@ -24,6 +28,6 @@ precmd() {
 	fi
 
 	#RPROMPT="${git_branch_prompt}"
-	PROMPT="%F{blue}%2~%f (${git_branch_prompt})%f %# "
+	PROMPT="$(virtualenv_info)%F{blue}%2~%f (${git_branch_prompt})%f %# "
 }
 ## END --------- PROMPT CONFIG
