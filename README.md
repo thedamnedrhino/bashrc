@@ -4,3 +4,5 @@
 ```
 source ~/.bash/bashrc
 ```
+3. Install `Antidote` https://getantidote.github.io/install for zsh plugin management: `brew install Antidote`
+4. Build plugins file: `antidote bundle <.zsh_plugins.txt >~/.zsh_plugins.zsh`
