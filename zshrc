@@ -15,6 +15,8 @@ setopt promptsubst
 
 zstyle ':vcs_info:*' formats '%b'
 
+alias killdock="defaults write com.apple.Dock appswitcher-all-displays -bool true; killall Dock"
+
 function virtualenv_info { 
     [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
 }
