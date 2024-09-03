@@ -4,3 +4,4 @@ caarlos0-graveyard/zsh-open-pr
 ael-code/zsh-colored-man-pages
 davidde/git
 djui/alias-tips
+fdellwing/zsh-bat
