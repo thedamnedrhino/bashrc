@@ -77,3 +77,4 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 # JINA_CLI_END
 
 
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
