@@ -2,7 +2,7 @@
 # MNML_USER_CHAR='$'
 # MNML_PROMPT=(mnml_ssh 'mnml_cwd 2 0' mnml_git mnml_pyenv mnml_status )
 source ~/.zsh_plugins.sh
-source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+source $HOMEBREW_PREFIX/opt/antidote/share/antidote/antidote.zsh
 
 alias pt='ENABLE_INITIATOR_ID=true DEV=true python -m pytest'
 alias mricrogl='/Applications/MRIcroGL.app/Contents/MacOS/MRIcroGL'
