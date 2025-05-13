@@ -77,4 +77,19 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 # JINA_CLI_END
 
 
+# Pyenv setup
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
+
+plugin=(
+  pyenv
+)
+
+eval "$(pyenv init -)"
+
+# Direnv setup
+eval "$(direnv hook zsh)"
+
+
